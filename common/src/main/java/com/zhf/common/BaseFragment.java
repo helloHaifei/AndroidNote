@@ -4,7 +4,9 @@ package com.zhf.common;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import com.zhf.common.interfaces.BaseInitialization;
@@ -32,8 +34,18 @@ public abstract class BaseFragment extends Fragment implements BaseInitializatio
     }
 
     @Override
-    public <T extends View> T findView(int resId) {
+    public <T extends View> T findView(@IdRes int resId) {
         return (T) getActivity().findViewById(resId);
+    }
+
+    @Override
+    public <T extends View> T findView(View rootView, @IdRes int resId){
+        return (T) rootView.findViewById(resId);
+    }
+
+    @Override
+    public <T extends View> T inflate(@IdRes int resId){
+        return (T) LayoutInflater.from(getActivity()).inflate(resId,null);
     }
 
     @Override

@@ -1,13 +1,18 @@
 package com.zhf.common.interfaces;
 
 import android.os.Bundle;
+import android.support.annotation.IdRes;
+import android.support.annotation.LayoutRes;
 import android.view.View;
 
 /**
  */
 public interface BaseInitialization {
 
-    <T extends View> T findView(int resId);
+    <T extends View> T findView(@IdRes int resId);
+    <T extends View> T findView(View rootView, @IdRes int resId);
+    <T extends View> T inflate(@LayoutRes int layoutId);
+
 
     void launchActivity(Class activityClass, Bundle bundle);
 

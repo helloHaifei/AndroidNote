@@ -18,9 +18,11 @@ package com.zhf.common;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
@@ -41,10 +43,18 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseInit
     private View mStatusBarView;
 
     @Override
-    public <T extends View> T findView(int resId) {
+    public <T extends View> T findView(@IdRes int resId){
         return (T) findViewById(resId);
     }
 
+    @Override
+    public <T extends View> T findView(View rootView, @IdRes int resId){
+        return (T) rootView.findViewById(resId);
+    }
+    @Override
+    public <T extends View> T inflate(@IdRes int resId){
+        return (T) LayoutInflater.from(this).inflate(resId,null);
+    }
     /**
      * Adds a {@link Fragment} to this activity's layout.
      *
