@@ -17,6 +17,7 @@ package com.zhf.common;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
@@ -24,6 +25,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
 
@@ -42,6 +45,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseInit
     private LinearLayout mBaseRootLayout;
     private View mStatusBarView;
 
+    boolean isShowSoftMethod ;
     @Override
     public <T extends View> T findView(@IdRes int resId){
         return (T) findViewById(resId);
@@ -185,5 +189,28 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseInit
         }
     }
 
+    public void setSoftMethodListener(){
+        //监听软键盘
+        final View activityRootView = ((ViewGroup) findViewById(android.R.id.content)).getChildAt(0);
+        activityRootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                Rect r = new Rect();
+                //r will be populated with the coordinates of your view that area still visible.
+                activityRootView.getWindowVisibleDisplayFrame(r);
 
+                int heightDiff = activityRootView.getRootView().getHeight() - (r.bottom - r.top);
+                if (heightDiff > 100) { // if more than 100 pixels, its probably a keyboard...
+                    isShowSoftMethod = true;
+                }else{
+                    isShowSoftMethod = false;
+                }
+
+            }
+        });
+    }
+
+    public boolean isShowSoftMethod() {
+        return isShowSoftMethod;
+    }
 }
