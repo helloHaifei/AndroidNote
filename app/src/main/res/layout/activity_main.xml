@@ -7,10 +7,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.zhf.androidtest.MainActivity">
+   >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.zhf.androidtest.MyTextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+android:maxLines="3"
+        android:text="ABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZ" />
+    <com.zhf.androidtest.EllipsizingTextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/textview"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:singleLine="false"
+        android:text="ABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZABCDEFGHIJKLJNOPQRSTUVWXYZ" />
 </RelativeLayout>
