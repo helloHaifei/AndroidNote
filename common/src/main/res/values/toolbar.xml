@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<item name="titlebar_btn_left" type="id" />-->
+    <!--<item name="titlebar_btn_center" type="id" />-->
+    <!--<item name="titlebar_btn_right" type="id" />-->
+    <!--<item name="titlebar_layout" type="id" />-->
+
+    <dimen name="titleBarTextViewSize">16dp</dimen>
+    <color name="titleBarTextViewColor">#ffffffff</color>
+    <dimen name="titleBarTextViewPadding">10dp</dimen>
+
+    <color name="titleBarBackground">#ffabcdef</color>
+
+    <dimen name="titleBarMinWidth">50dp</dimen>
+    <dimen name="titleBarHeight">48dp</dimen>
+
+    <declare-styleable name="ToolBar">
+
+
+        <attr name="centerText" format="string" />
+        <attr name="centerTextColor" format="reference|color|integer" />
+        <attr name="centerTextSize" format="reference|dimension" />
+        <!--left-->
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="reference|color|integer" />
+        <attr name="leftTextSize" format="reference|dimension" />
+        <attr name="leftDrawable" format="reference" />
+
+        <!--right-->
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="reference|color|integer" />
+        <attr name="rightTextSize" format="reference|dimension" />
+        <attr name="rightDrawable" format="reference" />
+        <!--right 1-->
+        <attr name="right1Text" format="string" />
+        <attr name="right1Drawable" format="reference" />
+        <!--right 2-->
+        <attr name="right2Text" format="string" />
+        <attr name="right2Drawable" format="reference" />
+
+
+    </declare-styleable>
+</resources>

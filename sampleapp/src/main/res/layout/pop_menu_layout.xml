@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#aa000000">
+
+    <Button
+        android:id="@+id/pop_menu_base"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:id="@+id/pop_menu_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pop_menu_base"
+        android:layout_toLeftOf="@id/pop_menu_base"
+        android:background="@drawable/bg_send_posts"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/pop_menu_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/btn_send_article_normal"
+            android:text="文章"/>
+
+        <Button
+            android:id="@+id/pop_menu_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/pop_menu_article"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/btn_send_dynamic_normal"
+            android:text="动态"/>
+
+
+        <Button
+            android:id="@+id/pop_menu_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pop_menu_article"
+            android:background="@null"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/btn_send_ask_normal"
+            android:text="提问"/>
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/pop_menu_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pop_menu_layout"
+        android:layout_marginLeft="-46dp"
+        android:layout_marginTop="-46dp"
+        android:layout_toRightOf="@id/pop_menu_layout"
+        android:background="@drawable/btn_send_close_posts_bg_selector"
+        android:src="@drawable/btn_send_add_posts_icon_normal"
+
+        />
+</RelativeLayout>

@@ -1,18 +1,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="@dimen/activity_vertical_margin" >
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/activity_vertical_margin">
+
+
+    <com.zhf.common.view.ToolBarLayout
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        style="@style/TitleBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:leftText="left"
+        custom:leftTextColor="0xffabcdef"
+        custom:leftTextSize="12dp"
+        custom:leftDrawable="@drawable/xsearch_loading"
+        custom:rightText="right"
+        custom:rightTextColor="0xffabcdef"
+        custom:rightTextSize="12dp"
+        custom:centerText="title"
+        custom:centerTextColor="0xffabcdef"
+        custom:centerTextSize="12dp"
+        >
+
+    </com.zhf.common.view.ToolBarLayout>
 
     <com.zhf.sampleapp.view.CustomView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         custom:contentText="内容"
-        custom:titleText="标题" />
-    
-      <com.zhf.sampleapp.view.ClockView
+        custom:titleText="标题"/>
+
+    <com.zhf.sampleapp.view.ClockView
         android:layout_width="300dp"
         android:layout_height="300dp"/>
 
@@ -21,8 +41,7 @@
         android:layout_height="wrap_content"
         custom:rainbowbar_color="@color/red"
         custom:rainbowbar_hspace="50dp"
-        custom:rainbowbar_vspace="2dp" />
-    
-  
+        custom:rainbowbar_vspace="2dp"/>
+
 
 </LinearLayout>

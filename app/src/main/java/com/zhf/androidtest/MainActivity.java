@@ -21,22 +21,25 @@ public class MainActivity extends BaseActivity {
         //launchActivity(VideoViewActivity.class);
         mTextView = findView(R.id.textview);
 
-        mTextView.setText(mString2);
-        mTextView.requestLayout();
-        mTextView.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Log.i("test",mTextView.getText().toString());
-                Log.i("test","string length="+mTextView.getText().length());
-                mTextView.setText(mTextView.getText().subSequence(0, mTextView.getText().length()- END.length()+1) + END);
-                //mTextView.getText();
-            }
-        },200);
+//        mTextView.setText(mString2);
+//        mTextView.requestLayout();
+//        mTextView.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Log.i("test",mTextView.getText().toString());
+//                Log.i("test","string length="+mTextView.getText().length());
+//                mTextView.setText(mTextView.getText().subSequence(0, mTextView.getText().length()- END.length()+1) + END);
+//                //mTextView.getText();
+//            }
+//        },200);
 
         Log.i("test","string length="+mString.length()+"");
         Log.i("test","string length="+mTextView.getText().length());
 
-        EllipsizingTextView view = findView(R.id.textview2);
-        view.setMaxLines(2);
+        Log.d("test","debug info");
+        Log.w("test","warring info");
+
+//        EllipsizingTextView view = findView(R.id.textview2);
+//        view.setMaxLines(2);
     }
 }

@@ -36,7 +36,10 @@ public class MainFragmetActivity extends FragmentActivity {
 		mList.add(new Custom("自定义组件使用attr属性", CustomViewActivity.class));
 		mList.add(new Custom("Drag YoutubeActivity", YoutubeActivity.class));
 		mList.add(new Custom("FixedGridLayout", FixedGridLayoutFragment.class));
-		
+		mList.add(new Custom("PopMenuFragment", PopMenuFragment.class));
+		mList.add(new Custom("TagFragment", TagFragment.class));
+		mList.add(new Custom("HtmlFragment", HtmlFragment.class));
+
 		//mList.add(new Custom("JAVA与HTML相互调用", JavascriptInterface.class));
 	}
 

@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/drawer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tag_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:padding="10dp" android:text="我怎么知道你想什么"/>
+
+    <TextView
+        android:id="@+id/tag_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tag_item_text"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_toRightOf="@id/tag_item_text"
+        android:background="@color/blue"
+        android:padding="3dp"
+        android:text="22"/>
+
+</RelativeLayout>
