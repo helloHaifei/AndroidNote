@@ -1,6 +1,6 @@
 Android开发笔记记录
 
-[Marddown 教程](http://www.jianshu.com/p/q81RER)
+[Markdown 教程](http://www.jianshu.com/p/q81RER)
 
 [线程使用](./线程使用.md)
 

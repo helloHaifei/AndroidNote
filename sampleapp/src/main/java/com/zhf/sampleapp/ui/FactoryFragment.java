@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.zhf.sampleapp.R;
 import com.zhf.sampleapp.view.FixedGridLayout;
 
 
@@ -20,13 +19,16 @@ import com.zhf.sampleapp.view.FixedGridLayout;
  * @blog:http://blog.csdn.net/hellohaifei
  * 
  */
-public class EmptyFragment extends BaseFragment {
+public class FactoryFragment extends BaseFragment {
+
+    View rootView;
+
+    public FactoryFragment(View view){
+        rootView = view;
+    }
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-
-       View rootView = inflater.inflate(R.layout.activity_main,null);
-
 		return rootView;
 	}
 

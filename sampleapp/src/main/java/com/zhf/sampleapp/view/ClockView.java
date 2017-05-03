@@ -10,7 +10,6 @@ public class ClockView extends View {
 
 	public ClockView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		// TODO Auto-generated constructor stub
 	}
 
 

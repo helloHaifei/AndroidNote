@@ -79,7 +79,7 @@ public class FixedGridLayoutFragment extends BaseFragment {
             mImageView = new ImageView(mContext);
             mImageView.setId(101);
             mImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            mImageView.setImageResource(R.drawable.ic_launcher);
+            mImageView.setImageResource(R.drawable.btn_send_ask_normal);
             int imageMargin = 20;
             //mImageView.setPadding(imagePadding,imagePadding,imagePadding,imagePadding);
             LayoutParams imageParam = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
