@@ -34,3 +34,6 @@ proguard/
 .idea/
 .gradle
 *.iml
+
+# freeline
+/freeline

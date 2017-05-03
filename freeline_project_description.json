@@ -1,0 +1,149 @@
+{
+    "android_gradle_plugin_version": "2.1.3",
+    "apk_path": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/build/outputs/apk/sampleapp-debug.apk",
+    "apt": {
+        
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": false
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/build/freeline",
+    "build_directory": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/build",
+    "build_script": "./gradlew :sampleapp:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "/Users/zhf/dev/android-sdk-macosx/build-tools/23.0.3",
+    "build_tools_version": "23.0.3",
+    "check_sources_md5": [
+        
+    ],
+    "compile_sdk_directory": "/Users/zhf/dev/android-sdk-macosx/platforms/android-23",
+    "compile_sdk_version": "android-23",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.zhf.sampleapp",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "/Users/zhf/dev/AndroidWorkspace/AndroidNote",
+    "freeline_gradle_plugin_version": "0.8.7",
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "java_home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home",
+    "launcher": "com.zhf.sampleapp.ui.MainFragmentActivity",
+    "main_assets_directory": [
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/assets",
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/assets"
+    ],
+    "main_jniLibs_directory": [
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/jniLibs",
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/jniLibs"
+    ],
+    "main_jni_directory": [
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/jni",
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/jni"
+    ],
+    "main_manifest_path": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/AndroidManifest.xml",
+    "main_project_dir": "sampleapp",
+    "main_project_name": "sampleapp",
+    "main_r_path": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/build/generated/source/r/debug/R.java",
+    "main_res_directory": [
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/res",
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/res"
+    ],
+    "main_src_directory": [
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/java",
+        "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/java"
+    ],
+    "module_dependencies": {
+        "common": [
+            
+        ],
+        "sampleapp": [
+            "common"
+        ]
+    },
+    "modules": [
+        {
+            "name": "sampleapp",
+            "path": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp"
+        },
+        {
+            "name": "common",
+            "path": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common"
+        }
+    ],
+    "package": "com.zhf.sampleapp",
+    "product_flavor": "",
+    "project_source_sets": {
+        "common": {
+            "main_assets_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/release/assets",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/release/jniLibs",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/release/jni",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/release/res",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/release/java",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/common/src/main/java"
+            ]
+        },
+        "sampleapp": {
+            "main_assets_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/assets",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/jniLibs",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/jni",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/res",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/debug/java",
+                "/Users/zhf/dev/AndroidWorkspace/AndroidNote/sampleapp/src/main/java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "/Users/zhf/dev/AndroidWorkspace/AndroidNote",
+    "sdk_directory": "/Users/zhf/dev/android-sdk-macosx",
+    "use_jdk8": false,
+    "use_system_gradle": false
+}
