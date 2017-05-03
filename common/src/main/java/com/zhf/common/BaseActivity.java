@@ -167,6 +167,11 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseInit
         doTransitionAction(transitionType, false);
     }
 
+    public Context getContext(){
+        return this;
+    }
+
+
     // 隐藏键盘
     public void hideKeyBoard() {
         try {

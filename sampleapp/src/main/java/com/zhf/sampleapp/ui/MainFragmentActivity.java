@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.zhf.common.util.HfViewUtil;
 import com.zhf.sampleapp.R;
+import com.zhf.sampleapp.activity.SchemeLaunchActivity;
 import com.zhf.sampleapp.view.ClockView;
 
 public class MainFragmentActivity extends FragmentActivity {
@@ -44,6 +45,7 @@ public class MainFragmentActivity extends FragmentActivity {
         mList.add(new CustomActivity("TagFragment", TagFragment.class));
         mList.add(new CustomActivity("HtmlFragment", HtmlFragment.class));
         mList.add(new CustomActivity("javascriptInterface", JavascriptInterfaceFragment.class));
+        mList.add(new CustomActivity("SchemeLaunchActivity", SchemeLaunchActivity.class));
         mList.add(new CustomActivity("ClockView", new ClockView(this,null)));
     }
 
